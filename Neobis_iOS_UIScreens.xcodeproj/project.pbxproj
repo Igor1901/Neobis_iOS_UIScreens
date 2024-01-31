@@ -20,7 +20,7 @@
 		F1BF4B142B69D50F000A7B3F /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1BF4B112B69D50F000A7B3F /* NotoSans-Regular.ttf */; };
 		F1BF4B152B69D50F000A7B3F /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1BF4B122B69D50F000A7B3F /* NotoSans-Bold.ttf */; };
 		F1BF4B162B69D50F000A7B3F /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1BF4B132B69D50F000A7B3F /* NotoSans-Medium.ttf */; };
-		F1BF4B182B69D583000A7B3F /* Citys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B172B69D583000A7B3F /* Citys.swift */; };
+		F1BF4B182B69D583000A7B3F /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B172B69D583000A7B3F /* TripModel.swift */; };
 		F1BF4B1A2B69D5AC000A7B3F /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B192B69D5AC000A7B3F /* TripTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		F1BF4B112B69D50F000A7B3F /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		F1BF4B122B69D50F000A7B3F /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		F1BF4B132B69D50F000A7B3F /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
-		F1BF4B172B69D583000A7B3F /* Citys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citys.swift; sourceTree = "<group>"; };
+		F1BF4B172B69D583000A7B3F /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F1BF4B192B69D5AC000A7B3F /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F11D97C92B62809800304B7B /* TripViewController.swift */,
-				F1BF4B172B69D583000A7B3F /* Citys.swift */,
+				F1BF4B172B69D583000A7B3F /* TripModel.swift */,
 				F1BF4B192B69D5AC000A7B3F /* TripTableViewCell.swift */,
 			);
 			path = Trip;
@@ -208,7 +208,7 @@
 				F11D97B42B61BC2500304B7B /* AppDelegate.swift in Sources */,
 				F11D97D22B628A0B00304B7B /* BookCustomTableViewCell.swift in Sources */,
 				F11D97B62B61BC2500304B7B /* SceneDelegate.swift in Sources */,
-				F1BF4B182B69D583000A7B3F /* Citys.swift in Sources */,
+				F1BF4B182B69D583000A7B3F /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
