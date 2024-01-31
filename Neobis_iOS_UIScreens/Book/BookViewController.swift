@@ -29,6 +29,17 @@ class BookViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         configureViewComponents()
+        navigationItem.title = "Singles"
+        let leftButton = UIBarButtonItem(image: UIImage(named: "Fourline")?.withTintColor(.black), style: .plain, target: self, action: #selector(buttonTapped))
+        navigationItem.leftBarButtonItem = leftButton
+        let rightButton = UIBarButtonItem(image: UIImage(named: "Magnifyingglass"), style: .plain, target: self, action: #selector(buttonTapped))
+        navigationItem.rightBarButtonItem = rightButton
+
+        
+    }
+    
+    @objc func buttonTapped(){
+        
     }
     
     func configureViewComponents(){
