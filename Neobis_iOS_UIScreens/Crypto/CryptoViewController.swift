@@ -77,10 +77,10 @@ class CryptoViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            checkAllLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            checkAllLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 108),
             checkAllLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
             
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 39),
+            tableView.topAnchor.constraint(equalTo: checkAllLabel.bottomAnchor, constant: 25),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 28),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
