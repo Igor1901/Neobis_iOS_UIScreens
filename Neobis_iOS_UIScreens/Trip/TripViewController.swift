@@ -71,7 +71,6 @@ class TripViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        //tableView.contentInset = UIEdgeInsets(top: 14, left: 0, bottom: 14, right: 0)
         tableView.rowHeight = 250
         tableView.showsVerticalScrollIndicator = false
         tableView.register(TripTableViewCell.self, forCellReuseIdentifier: "travelCell")

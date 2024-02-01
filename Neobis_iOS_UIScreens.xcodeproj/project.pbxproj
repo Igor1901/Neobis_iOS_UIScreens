@@ -22,6 +22,10 @@
 		F1BF4B162B69D50F000A7B3F /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1BF4B132B69D50F000A7B3F /* NotoSans-Medium.ttf */; };
 		F1BF4B182B69D583000A7B3F /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B172B69D583000A7B3F /* TripModel.swift */; };
 		F1BF4B1A2B69D5AC000A7B3F /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B192B69D5AC000A7B3F /* TripTableViewCell.swift */; };
+		F1BF4B1D2B6ADA42000A7B3F /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B1C2B6ADA42000A7B3F /* CryptoViewController.swift */; };
+		F1BF4B1F2B6AFBC4000A7B3F /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1BF4B1E2B6AFBC4000A7B3F /* Segoe UI Bold.ttf */; };
+		F1BF4B262B6B0DB5000A7B3F /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B252B6B0DB5000A7B3F /* CryptoModel.swift */; };
+		F1BF4B282B6B0DEF000A7B3F /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF4B272B6B0DEF000A7B3F /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		F1BF4B132B69D50F000A7B3F /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		F1BF4B172B69D583000A7B3F /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F1BF4B192B69D5AC000A7B3F /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		F1BF4B1C2B6ADA42000A7B3F /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		F1BF4B1E2B6AFBC4000A7B3F /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
+		F1BF4B252B6B0DB5000A7B3F /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		F1BF4B272B6B0DEF000A7B3F /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 				F11D97D32B652F2200304B7B /* Fonts */,
 				F11D97CB2B62864A00304B7B /* Book */,
 				F11D97FB2B69921600304B7B /* Trip */,
+				F1BF4B1B2B6ADA0C000A7B3F /* Crypto */,
 				F11D97CE2B62877B00304B7B /* Utils */,
 				F11D97BC2B61BC2500304B7B /* Assets.xcassets */,
 				F11D97BE2B61BC2500304B7B /* LaunchScreen.storyboard */,
@@ -112,6 +121,7 @@
 				F1BF4B132B69D50F000A7B3F /* NotoSans-Medium.ttf */,
 				F1BF4B112B69D50F000A7B3F /* NotoSans-Regular.ttf */,
 				F11D97D42B6530C200304B7B /* Segoe UI.ttf */,
+				F1BF4B1E2B6AFBC4000A7B3F /* Segoe UI Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -124,6 +134,16 @@
 				F1BF4B192B69D5AC000A7B3F /* TripTableViewCell.swift */,
 			);
 			path = Trip;
+			sourceTree = "<group>";
+		};
+		F1BF4B1B2B6ADA0C000A7B3F /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF4B1C2B6ADA42000A7B3F /* CryptoViewController.swift */,
+				F1BF4B252B6B0DB5000A7B3F /* CryptoModel.swift */,
+				F1BF4B272B6B0DEF000A7B3F /* CryptoTableViewCell.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +208,7 @@
 				F11D97C02B61BC2500304B7B /* LaunchScreen.storyboard in Resources */,
 				F1BF4B162B69D50F000A7B3F /* NotoSans-Medium.ttf in Resources */,
 				F11D97D52B6530C200304B7B /* Segoe UI.ttf in Resources */,
+				F1BF4B1F2B6AFBC4000A7B3F /* Segoe UI Bold.ttf in Resources */,
 				F1BF4B152B69D50F000A7B3F /* NotoSans-Bold.ttf in Resources */,
 				F11D97BD2B61BC2500304B7B /* Assets.xcassets in Resources */,
 			);
@@ -203,9 +224,12 @@
 				F11D97CD2B62866900304B7B /* Model.swift in Sources */,
 				F11D97D02B62879100304B7B /* Extensions.swift in Sources */,
 				F11D97B82B61BC2500304B7B /* BookViewController.swift in Sources */,
+				F1BF4B1D2B6ADA42000A7B3F /* CryptoViewController.swift in Sources */,
 				F1BF4B1A2B69D5AC000A7B3F /* TripTableViewCell.swift in Sources */,
 				F11D97CA2B62809800304B7B /* TripViewController.swift in Sources */,
+				F1BF4B262B6B0DB5000A7B3F /* CryptoModel.swift in Sources */,
 				F11D97B42B61BC2500304B7B /* AppDelegate.swift in Sources */,
+				F1BF4B282B6B0DEF000A7B3F /* CryptoTableViewCell.swift in Sources */,
 				F11D97D22B628A0B00304B7B /* BookCustomTableViewCell.swift in Sources */,
 				F11D97B62B61BC2500304B7B /* SceneDelegate.swift in Sources */,
 				F1BF4B182B69D583000A7B3F /* TripModel.swift in Sources */,
