@@ -4,6 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-ExtraBold.ttf</string>
 		<string>Segoe UI Bold.ttf</string>
 		<string>NotoSans-Regular.ttf</string>
 		<string>NotoSans-Medium.ttf</string>

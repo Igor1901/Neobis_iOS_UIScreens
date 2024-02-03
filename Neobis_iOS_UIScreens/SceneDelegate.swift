@@ -25,16 +25,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
         let crypto = UINavigationController(rootViewController: CryptoViewController())
         crypto.title = "crypto"
         
+        let finance = FinanceViewController()
+        finance.title = "finance"
+        
         book.tabBarItem = UITabBarItem(title: "Book", image: nil, selectedImage: nil)
         
         trip.tabBarItem = UITabBarItem(title: "Trip", image: nil, selectedImage: nil)
         
         crypto.tabBarItem = UITabBarItem(title: "Crypto", image: nil, selectedImage: nil)
         
+        finance.tabBarItem = UITabBarItem(title: "Finance", image: nil, selectedImage: nil)
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [book, trip, crypto]
+        tabBarController.viewControllers = [book, trip, crypto, finance]
         tabBarController.delegate = self
-        //window?.rootViewController = mainController
         
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
