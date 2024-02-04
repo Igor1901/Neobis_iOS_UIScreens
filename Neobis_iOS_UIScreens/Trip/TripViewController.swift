@@ -107,7 +107,7 @@ class TripViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            firstTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 58),
+            firstTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             firstTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             secondTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),

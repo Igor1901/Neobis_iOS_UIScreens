@@ -32,6 +32,14 @@
 		F1CA12482B6D8E24006F8D8E /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1CA12452B6D8E24006F8D8E /* Inter-Medium.ttf */; };
 		F1CA12492B6D8E24006F8D8E /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1CA12462B6D8E24006F8D8E /* Inter-Regular.ttf */; };
 		F1CA124A2B6D8E24006F8D8E /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1CA12472B6D8E24006F8D8E /* Inter-ExtraBold.ttf */; };
+		F1CA124D2B6EAC8A006F8D8E /* CryptoTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA124C2B6EAC8A006F8D8E /* CryptoTableHeaderView.swift */; };
+		F1CA124F2B6EB91A006F8D8E /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA124E2B6EB91A006F8D8E /* WeatherViewController.swift */; };
+		F1CA12522B6EC184006F8D8E /* Overpass-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1CA12502B6EC184006F8D8E /* Overpass-Bold.ttf */; };
+		F1CA12532B6EC184006F8D8E /* Overpass-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1CA12512B6EC184006F8D8E /* Overpass-Regular.ttf */; };
+		F1CA12552B6F36E7006F8D8E /* SecondWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA12542B6F36E7006F8D8E /* SecondWeatherViewController.swift */; };
+		F1CA12572B6F377F006F8D8E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA12562B6F377F006F8D8E /* WeatherModel.swift */; };
+		F1CA125D2B6F3861006F8D8E /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA125C2B6F3861006F8D8E /* WeatherCollectionViewCell.swift */; };
+		F1CA125F2B6F389D006F8D8E /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA125E2B6F389D006F8D8E /* WeatherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +70,14 @@
 		F1CA12452B6D8E24006F8D8E /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		F1CA12462B6D8E24006F8D8E /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		F1CA12472B6D8E24006F8D8E /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F1CA124C2B6EAC8A006F8D8E /* CryptoTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableHeaderView.swift; sourceTree = "<group>"; };
+		F1CA124E2B6EB91A006F8D8E /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		F1CA12502B6EC184006F8D8E /* Overpass-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Bold.ttf"; sourceTree = "<group>"; };
+		F1CA12512B6EC184006F8D8E /* Overpass-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		F1CA12542B6F36E7006F8D8E /* SecondWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWeatherViewController.swift; sourceTree = "<group>"; };
+		F1CA12562B6F377F006F8D8E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F1CA125C2B6F3861006F8D8E /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1CA125E2B6F389D006F8D8E /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,7 @@
 				F11D97FB2B69921600304B7B /* Trip */,
 				F1BF4B1B2B6ADA0C000A7B3F /* Crypto */,
 				F1CA123E2B6D8654006F8D8E /* Finance */,
+				F1CA124B2B6E9F3E006F8D8E /* Weather */,
 				F11D97CE2B62877B00304B7B /* Utils */,
 				F11D97BC2B61BC2500304B7B /* Assets.xcassets */,
 				F11D97BE2B61BC2500304B7B /* LaunchScreen.storyboard */,
@@ -130,6 +147,8 @@
 		F11D97D32B652F2200304B7B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F1CA12502B6EC184006F8D8E /* Overpass-Bold.ttf */,
+				F1CA12512B6EC184006F8D8E /* Overpass-Regular.ttf */,
 				F1CA12472B6D8E24006F8D8E /* Inter-ExtraBold.ttf */,
 				F1CA12452B6D8E24006F8D8E /* Inter-Medium.ttf */,
 				F1CA12462B6D8E24006F8D8E /* Inter-Regular.ttf */,
@@ -158,6 +177,7 @@
 				F1BF4B1C2B6ADA42000A7B3F /* CryptoViewController.swift */,
 				F1BF4B252B6B0DB5000A7B3F /* CryptoModel.swift */,
 				F1BF4B272B6B0DEF000A7B3F /* CryptoTableViewCell.swift */,
+				F1CA124C2B6EAC8A006F8D8E /* CryptoTableHeaderView.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -170,6 +190,42 @@
 				F1CA123F2B6D8686006F8D8E /* FinanceTableViewCell.swift */,
 			);
 			path = Finance;
+			sourceTree = "<group>";
+		};
+		F1CA124B2B6E9F3E006F8D8E /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA125A2B6F37AB006F8D8E /* CuctomCells */,
+				F1CA12592B6F3796006F8D8E /* ViewControllers */,
+				F1CA12582B6F3783006F8D8E /* Model */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		F1CA12582B6F3783006F8D8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA12562B6F377F006F8D8E /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1CA12592B6F3796006F8D8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA124E2B6EB91A006F8D8E /* WeatherViewController.swift */,
+				F1CA12542B6F36E7006F8D8E /* SecondWeatherViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F1CA125A2B6F37AB006F8D8E /* CuctomCells */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA125C2B6F3861006F8D8E /* WeatherCollectionViewCell.swift */,
+				F1CA125E2B6F389D006F8D8E /* WeatherTableViewCell.swift */,
+			);
+			path = CuctomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +292,11 @@
 				F1BF4B162B69D50F000A7B3F /* NotoSans-Medium.ttf in Resources */,
 				F11D97D52B6530C200304B7B /* Segoe UI.ttf in Resources */,
 				F1CA124A2B6D8E24006F8D8E /* Inter-ExtraBold.ttf in Resources */,
+				F1CA12532B6EC184006F8D8E /* Overpass-Regular.ttf in Resources */,
 				F1CA12482B6D8E24006F8D8E /* Inter-Medium.ttf in Resources */,
 				F1BF4B1F2B6AFBC4000A7B3F /* Segoe UI Bold.ttf in Resources */,
 				F1BF4B152B69D50F000A7B3F /* NotoSans-Bold.ttf in Resources */,
+				F1CA12522B6EC184006F8D8E /* Overpass-Bold.ttf in Resources */,
 				F11D97BD2B61BC2500304B7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +309,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11D97CD2B62866900304B7B /* Model.swift in Sources */,
+				F1CA12552B6F36E7006F8D8E /* SecondWeatherViewController.swift in Sources */,
+				F1CA124F2B6EB91A006F8D8E /* WeatherViewController.swift in Sources */,
 				F11D97D02B62879100304B7B /* Extensions.swift in Sources */,
 				F11D97B82B61BC2500304B7B /* BookViewController.swift in Sources */,
+				F1CA125D2B6F3861006F8D8E /* WeatherCollectionViewCell.swift in Sources */,
+				F1CA124D2B6EAC8A006F8D8E /* CryptoTableHeaderView.swift in Sources */,
 				F1BF4B1D2B6ADA42000A7B3F /* CryptoViewController.swift in Sources */,
 				F1BF4B1A2B69D5AC000A7B3F /* TripTableViewCell.swift in Sources */,
+				F1CA125F2B6F389D006F8D8E /* WeatherTableViewCell.swift in Sources */,
 				F1CA12422B6D8696006F8D8E /* FinanceViewController.swift in Sources */,
 				F11D97CA2B62809800304B7B /* TripViewController.swift in Sources */,
 				F1CA12442B6D86A7006F8D8E /* FinanceModel.swift in Sources */,
+				F1CA12572B6F377F006F8D8E /* WeatherModel.swift in Sources */,
 				F1BF4B262B6B0DB5000A7B3F /* CryptoModel.swift in Sources */,
 				F11D97B42B61BC2500304B7B /* AppDelegate.swift in Sources */,
 				F1BF4B282B6B0DEF000A7B3F /* CryptoTableViewCell.swift in Sources */,

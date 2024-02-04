@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
         let book = UINavigationController(rootViewController: BookViewController())
         book.title = "book"
         
-        let trip = UINavigationController(rootViewController: TripViewController())
+        let trip = TripViewController()
         trip.title = "trip"
         
         let crypto = UINavigationController(rootViewController: CryptoViewController())
@@ -28,16 +28,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
         let finance = FinanceViewController()
         finance.title = "finance"
         
-        book.tabBarItem = UITabBarItem(title: "Book", image: nil, selectedImage: nil)
+        let weather = WeatherViewController()
+        weather.title = "weather"
         
-        trip.tabBarItem = UITabBarItem(title: "Trip", image: nil, selectedImage: nil)
+        book.tabBarItem = UITabBarItem(title: "Book", image: UIImage(named: "book"), selectedImage: nil)
         
-        crypto.tabBarItem = UITabBarItem(title: "Crypto", image: nil, selectedImage: nil)
+        trip.tabBarItem = UITabBarItem(title: "Trip", image: UIImage(named: "world"), selectedImage: nil)
         
-        finance.tabBarItem = UITabBarItem(title: "Finance", image: nil, selectedImage: nil)
+        crypto.tabBarItem = UITabBarItem(title: "Crypto", image: UIImage(named: "crypto"), selectedImage: nil)
+        
+        finance.tabBarItem = UITabBarItem(title: "Finance", image: UIImage(named: "hand"), selectedImage: nil)
+        
+        weather.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(named: "cloudy"), selectedImage: nil)
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [book, trip, crypto, finance]
+        tabBarController.viewControllers = [book, trip, crypto, finance, weather]
         tabBarController.delegate = self
         
         window.rootViewController = tabBarController

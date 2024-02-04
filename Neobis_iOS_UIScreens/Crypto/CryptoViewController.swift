@@ -26,13 +26,7 @@ class CryptoViewController: UIViewController {
         return label
     }()
     
-    private lazy var checkAllLabel: UILabel = {
-        let label = UILabel()
-        label.text = "посмотреть все"
-        label.font = UIFont(name: "Segoe UI", size: 14)
-        label.textColor = UIColor(hex: "#F6543E")
-        return label
-    }()
+
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -58,9 +52,12 @@ class CryptoViewController: UIViewController {
         navigationItem.leftBarButtonItems = [fixedSpace, customTitleView]
         
         // Включаем большой заголовок для навигационного контроллера
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.prefersLargeTitles = false
         let rightButton = UIBarButtonItem(image: UIImage(named: "cryptoSettings"), style: .plain, target: self, action: #selector(buttonTapped))
         navigationItem.rightBarButtonItem = rightButton
+        
+        // Register custom header view
+        tableView.register(CryptoTableHeaderView.self, forHeaderFooterViewReuseIdentifier: "cryptoTableHeaderView")
         
         setupConstraints()
     }
@@ -71,16 +68,12 @@ class CryptoViewController: UIViewController {
     
     private func setupConstraints() {
         view.addSubview(tableView)
-        view.addSubview(checkAllLabel)
         
-        checkAllLabel.translatesAutoresizingMaskIntoConstraints = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            checkAllLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 108),
-            checkAllLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
             
-            tableView.topAnchor.constraint(equalTo: checkAllLabel.bottomAnchor, constant: 25),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 28),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
@@ -101,6 +94,11 @@ class CryptoViewController: UIViewController {
             return cell
         }
     
-        
+        func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cryptoTableHeaderView") as! CryptoTableHeaderView
+            headerView.checkAllLabel.text = "посмотреть все"
+            // Customize your header view here
+            return headerView
+        }
     
 }
