@@ -39,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
         
         finance.tabBarItem = UITabBarItem(title: "Finance", image: UIImage(named: "hand"), selectedImage: nil)
         
-        weather.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(named: "cloudy"), selectedImage: nil)
+        weather.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(named: "cloudy1"), selectedImage: nil)
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [book, trip, crypto, finance, weather]
